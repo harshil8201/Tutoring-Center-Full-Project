@@ -2,11 +2,9 @@
 
 ## Group: 3
 
-Harshil Patel - C0908491
-Jagjeet Kaur Randhawa -
-Dhruvin Lad -
-Bazil Nizam -
+### Group members:
 
-# to start mongo db server, run this command in mac:
-
-## sudo mongod --dbpath=/Users/harshilpatel/data/db
+<br/>Harshil Patel - C0908491
+<br/>Jagjeet Kaur Randhawa -
+<br/>Dhruvin Lad -
+<br/>Bazil Nizam -
