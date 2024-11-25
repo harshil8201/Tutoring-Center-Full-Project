@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>
+      Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites
+      by Untree.co
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Start Header/Navigation -->
+    <nav
+      class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
+      arial-label="Furni navigation bar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          >ProgLearn Hub<span>.</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsFurni"
+          aria-controls="navbarsFurni"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li><a class="nav-link" href="shop.html">Shop</a></li>
+            <li><a class="nav-link" href="about.html">About us</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="contact.html">Contact us</a></li>
+            <li><a class="nav-link" href="orders.html">Orders</a></li>
+            <li><a class="nav-link" href="login.html">Login</a></li>
+          </ul>
+
+          <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+            
+            <li class="active">
+              <a class="nav-link" href="cart.html"
+                ><img src="images/cart.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <!-- Start Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5">
+            <div class="intro-excerpt">
+              <h1>Cart</h1>
+              <p class="mb-4">
+                Explore ProgLearn's diverse array of courses, meticulously
+                crafted to cater to every learner's needs and interests. From
+                programming to Technology, our comprehensive services offer
+                something for everyone, empowering individuals worldwide to
+                pursue their passions and achieve their goals.
+              </p>
+              <p>
+                <a href="" class="btn btn-secondary me-2">Shop Now</a
+                ><a href="#" class="btn btn-white-outline">Explore</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="hero-img-wrap">
+              <img
+                src="https://cdni.iconscout.com/illustration/premium/thumb/mobile-shopping-8770634-7139078.png"
+                class="img-fluid"
+                style="height: 550px; width: 550px; object-fit: scale-down"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <div class="untree_co-section before-footer-section">
+      <div class="container">
+        <div class="row mb-5">
+          <form class="col-md-12" method="post">
+            <div class="site-blocks-table">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="product-thumbnail">Image</th>
+                    <th class="product-name">Product</th>
+                    <th class="product-price">Price</th>
+                    <th class="product-remove">Remove</th>
+                  </tr>
+                </thead>
+                <tbody id="cart-items">
+                  <!-- Table rows will be dynamically added here -->
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row mb-5"></div>
+            <div class="row">
+              <div class="col-md-12">
+                <label class="text-black h4" for="coupon">Coupon</label>
+                <p>Enter your coupon code if you have one.</p>
+              </div>
+              <div class="col-md-8 mb-3 mb-md-0">
+                <input
+                  type="text"
+                  class="form-control py-3"
+                  id="coupon"
+                  placeholder="Coupon Code"
+                />
+              </div>
+              <div class="col-md-4">
+                <button class="btn btn-black">Apply Coupon</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pl-5">
+            <div class="row justify-content-end">
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-12 text-right border-bottom mb-5">
+                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Subtotal</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black subtotal">$0.00</strong>
+                    <!-- Placeholder for subtotal -->
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <span class="text-black">Tax (13%)</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black tax">$0.00</strong>
+                    <!-- Placeholder for tax amount -->
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col-md-6">
+                    <span class="text-black">Total</span>
+                  </div>
+                  <div class="col-md-6 text-right">
+                    <strong class="text-black total">$0.00</strong>
+                    <!-- Placeholder for total -->
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <button
+                      class="btn btn-black btn-lg py-3 btn-block"
+                      onclick="window.location='checkout.html'"
+                    >
+                      Proceed To Checkout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+      <div class="container relative">
+        <div class="sofa-img">
+          <img
+            src="images/Pic1.png"
+            alt="Image"
+            class="img-fluid"
+            style="border-radius: 15%"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="subscription-form">
+              <h3 class="d-flex align-items-center">
+                <span class="me-1"
+                  ><img
+                    src="images/envelope-outline.svg"
+                    alt="Image"
+                    class="img-fluid" /></span
+                ><span>Subscribe to Newsletter</span>
+              </h3>
+
+              <form action="#" class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="col-auto">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-primary">
+                    <span class="fa fa-paper-plane"></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-5 mb-5">
+          <div class="col-lg-4">
+            <div class="mb-4 footer-logo-wrap">
+              <a href="#" class="footer-logo">ProgLearn Hub<span>.</span></a>
+            </div>
+            <p class="mb-4">
+              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+              quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+              vulputate velit imperdiet dolor tempor tristique. Pellentesque
+              habitant
+            </p>
+
+            <ul class="list-unstyled custom-social">
+              <li>
+                <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-linkedin"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row links-wrap">
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Knowledge base</a></li>
+                  <li><a href="#">Live chat</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Our team</a></li>
+                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">Nordic Chair</a></li>
+                  <li><a href="#">Kruzo Aero</a></li>
+                  <li><a href="#">Ergonomic Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top copyright">
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <p class="mb-2 text-center text-lg-start">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . All Rights Reserved. &mdash; Designed with love by
+                <a href="https://untree.co">Untree.co</a> Distributed By
+                <a hreff="https://themewagon.com">ThemeWagon</a>
+                <!-- License information: https://untree.co/license/ -->
+              </p>
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-end">
+              <ul class="list-unstyled d-inline-flex ms-auto">
+                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <!--<script src="js/custom.js"></script>-->
+  </body>
+
+  <script>
+    $(document).ready(function () {
+      // Retrieve the product list from localStorage
+      var productList = JSON.parse(localStorage.getItem("productList"));
+      localStorage.setItem("productList", JSON.stringify(productList));
+      console.log(productList);
+      if (productList && productList.length > 0) {
+        // If productList is not empty, populate the table with products
+        populateTable(productList);
+        calculateTotals(productList);
+      } else {
+        // If productList is empty or not found, display a message or handle as needed
+        $("#cart-items").append(
+          "<tr><td colspan='4'>No products in the cart</td></tr>"
+        );
+      }
+
+      // Attach click event handler to "X" buttons to remove products
+      $("#cart-items").on("click", ".btn-remove", function () {
+        var index = $(this).closest("tr").index();
+        productList.splice(index, 1); // Remove the product from the list
+        localStorage.setItem("productList", JSON.stringify(productList)); // Update localStorage
+        $(this).closest("tr").remove(); // Remove the corresponding table row
+        //populateTable(productList);
+        calculateTotals(productList);
+        if (productList && productList.length == 0)
+          $("#cart-items").append(
+            "<tr><td colspan='4'>No products in the cart</td></tr>"
+          );
+      });
+    });
+
+    function calculateTotals(productList) {
+      var subtotal = 0;
+      // Calculate the subtotal by summing up the prices of all products
+      productList.forEach(function (product) {
+        subtotal += product.price;
+      });
+
+      // Calculate the tax amount (13%)
+      var taxAmount = subtotal * 0.13;
+
+      // Calculate the total including tax
+      var total = subtotal + taxAmount;
+
+      // Display the subtotal, tax amount, and total
+      $(".subtotal").text("$" + subtotal.toFixed(2));
+      $(".tax").text("$" + taxAmount.toFixed(2));
+      $(".total").text("$" + total.toFixed(2));
+    }
+
+    function populateTable(productList) {
+      // Loop through the productList and generate table rows for each product
+      productList.forEach(function (product) {
+        var tableRow =
+          "<tr>" +
+          "<td class='product-thumbnail'><img src='" +
+          product.img +
+          "' alt='Image' class='img-fluid' style='width: 100px; height: 100px; object-fit: scale-down;'></td>" +
+          "<td class='product-name'><h2 class='h5 text-black'>" +
+          product.name +
+          "</h2></td>" +
+          "<td>$" +
+          product.price.toFixed(2) +
+          "</td>" +
+          "<td><a class='btn btn-black btn-sm btn-remove'>X</a></td>" +
+          "</tr>";
+        $("#cart-items").append(tableRow);
+      });
+    }
+  </script>
+</html>

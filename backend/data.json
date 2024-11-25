@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Java",
+    "price": 50.0,
+    "img": "https://cdn.freebiesupply.com/logos/large/2x/java-4-logo-png-transparent.png"
+  },
+  {
+    "name": "JavaScript",
+    "price": 75.0,
+    "img": "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+  },
+  {
+    "name": "Node.js",
+    "price": 45.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+  },
+  {
+    "name": "React",
+    "price": 60.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "name": "Angular",
+    "price": 65.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
+  },
+  {
+    "name": "Python",
+    "price": 50.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+  },
+  {
+    "name": "PHP",
+    "price": 55.0,
+    "img": "https://pngimg.com/d/php_PNG35.png"
+  },
+  {
+    "name": "C#",
+    "price": 70.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/910px-Logo_C_sharp.svg.png"
+  },
+  {
+    "name": "Swift",
+    "price": 80.0,
+    "img": "https://cdn-icons-png.flaticon.com/256/5968/5968371.png"
+  },
+  {
+    "name": "Kotlin",
+    "price": 45.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png"
+  },
+  {
+    "name": "Ruby",
+    "price": 50.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
+  },
+  {
+    "name": "Go",
+    "price": 60.0,
+    "img": "https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png"
+  },
+  {
+    "name": "R",
+    "price": 55.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png"
+  },
+  {
+    "name": "Dart",
+    "price": 65.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png"
+  },
+  {
+    "name": "SQL",
+    "price": 45.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/640px-Sql_data_base_with_logo.png"
+  },
+  {
+    "name": "TypeScript",
+    "price": 60.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+  },
+  {
+    "name": "HTML5",
+    "price": 40.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+  },
+  {
+    "name": "CSS3",
+    "price": 50.0,
+    "img": "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"
+  },
+  {
+    "name": "C++",
+    "price": 65.0,
+    "img": "https://upload.wikimedia.org/wikipedia/commons/3/32/C%2B%2B_logo.png"
+  },
+  {
+    "name": "Elixir",
+    "price": 80.0,
+    "img": "https://logodix.com/logo/2157075.png"
+  }
+]

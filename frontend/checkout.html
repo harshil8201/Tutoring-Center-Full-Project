@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/tiny-slider.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>
+      Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites
+      by Untree.co
+    </title>
+    <style>
+      h1 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 60px;
+      }
+
+      #lean_overlay {
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        display: none;
+      }
+
+      .popupContainer {
+        position: absolute;
+        width: 330px;
+        height: auto;
+        left: 45%;
+        top: 60px;
+        background: #fff;
+      }
+
+      #modal_trigger {
+        margin: 40px auto;
+        width: 200px;
+        display: block;
+        /*border: 1px solid #DDD;**/
+        border-radius: 4px;
+        border-radius: 30px;
+      }
+
+      /*.btn {
+				padding: 10px 20px;
+				background: #F4F4F2;
+		}*/
+
+      .btn_red {
+        background: #ed6347;
+        color: #fff;
+      }
+
+      .btn:hover {
+        background: #e4e4e2;
+        /*border: black;*/
+      }
+
+      .btn_red:hover {
+        background: #c12b05;
+      }
+
+      a.btn {
+        color: #666;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      a.btn_red {
+        color: #fff;
+      }
+
+      .one_half {
+        width: 50%;
+        display: block;
+        float: left;
+      }
+
+      .one_half.last {
+        width: 45%;
+        margin-left: 5%;
+      }
+      /* Popup Styles*/
+
+      .popupHeader {
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      .popupHeader {
+        background: #f4f4f2;
+        position: relative;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+      }
+
+      .popupHeader .modal_close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 15px;
+        background: #e4e4e2;
+        cursor: pointer;
+        color: #aaa;
+        font-size: 16px;
+      }
+
+      .popupBody {
+        padding: 20px;
+      }
+      /* Social Login Form */
+
+      .social_login .social_box {
+        display: block;
+        clear: both;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #f4f4f2;
+        overflow: hidden;
+      }
+
+      .social_login .icon {
+        display: block;
+        width: 10px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        float: left;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .social_login .fb .icon {
+        background: #3b5998;
+      }
+
+      .social_login .google .icon {
+        background: #dd4b39;
+      }
+
+      .social_login .icon_title {
+        display: block;
+        padding: 5px 0;
+        float: left;
+        font-weight: bold;
+        font-size: 16px;
+        color: #777;
+      }
+
+      .social_login .social_box:hover {
+        background: #e4e4e2;
+      }
+
+      .centeredText {
+        text-align: center;
+        margin: 20px 0;
+        clear: both;
+        overflow: hidden;
+        text-transform: uppercase;
+      }
+
+      .action_btns {
+        clear: both;
+        overflow: hidden;
+      }
+
+      .action_btns a {
+        display: block;
+      }
+      /* User Login Form */
+
+      .user_login {
+        display: none;
+      }
+
+      .user_login label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .user_login input[type="text"],
+      .user_login input[type="email"],
+      .user_login input[type="password"] {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        color: #666;
+      }
+
+      .user_login input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+      }
+
+      .user_login input[type="checkbox"] + label {
+        float: left;
+      }
+
+      .user_login .checkbox {
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
+      }
+
+      .forgot_password {
+        display: block;
+        margin: 20px 0 10px;
+        clear: both;
+        overflow: hidden;
+        text-decoration: none;
+        color: #ed6347;
+      }
+      /* User Register Form */
+
+      .user_register {
+        display: none;
+      }
+
+      .user_register label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .user_register input[type="text"],
+      .user_register input[type="email"],
+      .user_register input[type="password"] {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        color: #666;
+      }
+
+      .user_register input[type="checkbox"] {
+        float: left;
+        margin-right: 5px;
+      }
+
+      .user_register input[type="checkbox"] + label {
+        float: left;
+      }
+
+      .user_register .checkbox {
+        margin-bottom: 10px;
+        clear: both;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start Header/Navigation -->
+    <nav
+      class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
+      arial-label="Furni navigation bar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          >ProgLearn Hub<span>.</span></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsFurni"
+          aria-controls="navbarsFurni"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li><a class="nav-link" href="shop.html">Shop</a></li>
+            <li><a class="nav-link" href="about.html">About us</a></li>
+            <li><a class="nav-link" href="services.html">Services</a></li>
+            <li><a class="nav-link" href="blog.html">Blog</a></li>
+            <li><a class="nav-link" href="contact.html">Contact us</a></li>
+            <li><a class="nav-link" href="orders.html">Orders</a></li>
+            <li><a class="nav-link" href="login.html">Login</a></li>
+          </ul>
+
+          <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+            
+            <li>
+              <a class="nav-link" href="cart.html"
+                ><img src="images/cart.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <!-- Start Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5">
+            <div class="intro-excerpt">
+              <h1>Checkout</h1>
+              <div id="welcome-message" style="display: none">
+                <h1>Welcome, <span id="user-username"></span>!</h1>
+                <!-- <button id="logout-btn" class="btn btn-dark">Logout</button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <div class="untree_co-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h2 class="h3 mb-3 text-black">Billing Details</h2>
+            <div class="p-3 p-lg-5 border bg-white">
+              <div class="form-group">
+                <label for="c_country" class="text-black"
+                  >Country <span class="text-danger">*</span></label
+                >
+                <select id="c_country" class="form-control">
+                  <option value="1">Select a country</option>
+                  <option value="2">bangladesh</option>
+                  <option value="3">Algeria</option>
+                  <option value="4">Afghanistan</option>
+                  <option value="5">Ghana</option>
+                  <option value="6">Albania</option>
+                  <option value="7">Bahrain</option>
+                  <option value="8">Colombia</option>
+                  <option value="9">Dominican Republic</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="c_fname" class="text-black"
+                    >First Name <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_fname"
+                    name="c_fname"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="c_lname" class="text-black"
+                    >Last Name <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_lname"
+                    name="c_lname"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_companyname" class="text-black"
+                    >Company Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_companyname"
+                    name="c_companyname"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_address" class="text-black"
+                    >Address <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_address"
+                    name="c_address"
+                    placeholder="Street address"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apartment, suite, unit etc. (optional)"
+                />
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="c_state_country" class="text-black"
+                    >State / Country <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_state_country"
+                    name="c_state_country"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="c_postal_zip" class="text-black"
+                    >Posta / Zip <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_postal_zip"
+                    name="c_postal_zip"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row mb-5">
+                <div class="col-md-6">
+                  <label for="c_email_address" class="text-black"
+                    >Email Address <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_email_address"
+                    name="c_email_address"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="c_phone" class="text-black"
+                    >Phone <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="c_phone"
+                    name="c_phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="c_create_account"
+                  class="text-black"
+                  data-bs-toggle="collapse"
+                  href="#create_an_account"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="create_an_account"
+                  ><input type="checkbox" value="1" id="c_create_account" />
+                  Create an account?</label
+                >
+                <div class="collapse" id="create_an_account">
+                  <div class="py-2 mb-4">
+                    <p class="mb-3">
+                      Create an account by entering the information below. If
+                      you are a returning customer please login at the top of
+                      the page.
+                    </p>
+                    <div class="form-group">
+                      <label for="c_account_password" class="text-black"
+                        >Account Password</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="c_account_password"
+                        name="c_account_password"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="c_ship_different_address"
+                  class="text-black"
+                  data-bs-toggle="collapse"
+                  href="#ship_different_address"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="ship_different_address"
+                  ><input
+                    type="checkbox"
+                    value="1"
+                    id="c_ship_different_address"
+                  />
+                  Ship To A Different Address?</label
+                >
+                <div class="collapse" id="ship_different_address">
+                  <div class="py-2">
+                    <div class="form-group">
+                      <label for="c_diff_country" class="text-black"
+                        >Country <span class="text-danger">*</span></label
+                      >
+                      <select id="c_diff_country" class="form-control">
+                        <option value="1">Select a country</option>
+                        <option value="2">bangladesh</option>
+                        <option value="3">Algeria</option>
+                        <option value="4">Afghanistan</option>
+                        <option value="5">Ghana</option>
+                        <option value="6">Albania</option>
+                        <option value="7">Bahrain</option>
+                        <option value="8">Colombia</option>
+                        <option value="9">Dominican Republic</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="c_diff_fname" class="text-black"
+                          >First Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_fname"
+                          name="c_diff_fname"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="c_diff_lname" class="text-black"
+                          >Last Name <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_lname"
+                          name="c_diff_lname"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-12">
+                        <label for="c_diff_companyname" class="text-black"
+                          >Company Name
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_companyname"
+                          name="c_diff_companyname"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row mb-3">
+                      <div class="col-md-12">
+                        <label for="c_diff_address" class="text-black"
+                          >Address <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_address"
+                          name="c_diff_address"
+                          placeholder="Street address"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Apartment, suite, unit etc. (optional)"
+                      />
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="c_diff_state_country" class="text-black"
+                          >State / Country
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_state_country"
+                          name="c_diff_state_country"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="c_diff_postal_zip" class="text-black"
+                          >Posta / Zip <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_postal_zip"
+                          name="c_diff_postal_zip"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row mb-5">
+                      <div class="col-md-6">
+                        <label for="c_diff_email_address" class="text-black"
+                          >Email Address
+                          <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_email_address"
+                          name="c_diff_email_address"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="c_diff_phone" class="text-black"
+                          >Phone <span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="c_diff_phone"
+                          name="c_diff_phone"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c_order_notes" class="text-black"
+                  >Order Notes</label
+                >
+                <textarea
+                  name="c_order_notes"
+                  id="c_order_notes"
+                  cols="30"
+                  rows="5"
+                  class="form-control"
+                  placeholder="Write your notes here..."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h2 class="h3 mb-3 text-black">Coupon Code</h2>
+                <div class="p-3 p-lg-5 border bg-white">
+                  <label for="c_code" class="text-black mb-3"
+                    >Enter your coupon code if you have one</label
+                  >
+                  <div class="input-group w-75 couponcode-wrap">
+                    <input
+                      type="text"
+                      class="form-control me-2"
+                      id="c_code"
+                      placeholder="Coupon Code"
+                      aria-label="Coupon Code"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-black btn-sm"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                <div class="p-3 p-lg-5 border bg-white">
+                  <table class="table site-block-order-table mb-5">
+                    <thead>
+                      <th>Product</th>
+                      <th>Total</th>
+                    </thead>
+                    <tbody>
+                      <!-- Data will dynamicly generated -->
+                    </tbody>
+                  </table>
+
+                  <div class="border p-3 mb-3">
+                    <h3 class="h6 mb-0">
+                      <a
+                        class="d-block"
+                        data-bs-toggle="collapse"
+                        href="#collapsebank"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsebank"
+                        >Direct Bank Transfer</a
+                      >
+                    </h3>
+
+                    <div class="collapse" id="collapsebank">
+                      <div class="py-2">
+                        <p class="mb-0">
+                          Make your payment directly into our bank account.
+                          Please use your Order ID as the payment reference.
+                          Your order won’t be shipped until the funds have
+                          cleared in our account.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border p-3 mb-3">
+                    <h3 class="h6 mb-0">
+                      <a
+                        class="d-block"
+                        data-bs-toggle="collapse"
+                        href="#collapsecheque"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsecheque"
+                        >Cheque Payment</a
+                      >
+                    </h3>
+
+                    <div class="collapse" id="collapsecheque">
+                      <div class="py-2">
+                        <p class="mb-0">
+                          Make your payment directly into our bank account.
+                          Please use your Order ID as the payment reference.
+                          Your order won’t be shipped until the funds have
+                          cleared in our account.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="border p-3 mb-5">
+                    <h3 class="h6 mb-0">
+                      <a
+                        class="d-block"
+                        data-bs-toggle="collapse"
+                        href="#collapsepaypal"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsepaypal"
+                        >Paypal</a
+                      >
+                    </h3>
+
+                    <div class="collapse" id="collapsepaypal">
+                      <div class="py-2">
+                        <p class="mb-0">
+                          Make your payment directly into our bank account.
+                          Please use your Order ID as the payment reference.
+                          Your order won’t be shipped until the funds have
+                          cleared in our account.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button
+                      class="btn btn-black btn-lg py-3 btn-block"
+                      id="placeOrder"
+                    >
+                      Place Order
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>
+
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+      <div class="container relative">
+        <div class="sofa-img">
+          <img
+            src="images/pic1.png"
+            alt="Image"
+            class="img-fluid"
+            style="border-radius: 15%"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="subscription-form">
+              <h3 class="d-flex align-items-center">
+                <span class="me-1"
+                  ><img
+                    src="images/envelope-outline.svg"
+                    alt="Image"
+                    class="img-fluid" /></span
+                ><span>Subscribe to Newsletter</span>
+              </h3>
+
+              <form action="#" class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="col-auto">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-primary">
+                    <span class="fa fa-paper-plane"></span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-5 mb-5">
+          <div class="col-lg-4">
+            <div class="mb-4 footer-logo-wrap">
+              <a href="#" class="footer-logo">ProgLearn Hub<span>.</span></a>
+            </div>
+            <p class="mb-4">
+              Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+              quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+              vulputate velit imperdiet dolor tempor tristique. Pellentesque
+              habitant
+            </p>
+
+            <ul class="list-unstyled custom-social">
+              <li>
+                <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fa fa-brands fa-linkedin"></span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row links-wrap">
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Knowledge base</a></li>
+                  <li><a href="#">Live chat</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Our team</a></li>
+                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-sm-6 col-md-3">
+                <ul class="list-unstyled">
+                  <li><a href="#">Nordic Chair</a></li>
+                  <li><a href="#">Kruzo Aero</a></li>
+                  <li><a href="#">Ergonomic Chair</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-top copyright">
+          <div class="row pt-4">
+            <div class="col-lg-6">
+              <p class="mb-2 text-center text-lg-start">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . All Rights Reserved. &mdash; Designed with love by
+                <a href="https://untree.co">Untree.co</a> Distributed By
+                <a hreff="https://themewagon.com">ThemeWagon</a>
+                <!-- License information: https://untree.co/license/ -->
+              </p>
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-end">
+              <ul class="list-unstyled d-inline-flex ms-auto">
+                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Place Order button logic -->
+    <script>
+      document
+        .getElementById("placeOrder")
+        .addEventListener("click", function () {
+          // Get the product list from localStorage
+          const productList =
+            JSON.parse(localStorage.getItem("productList")) || [];
+
+          // Check if the product list is not empty
+          if (productList.length > 0) {
+            // Get the logged-in user's email from localStorage
+            const email = localStorage.getItem("userEmail"); // Make sure 'userEmail' is stored during login
+
+            // Prepare the course IDs (array of course IDs)
+            const courseIds = productList.map((course) => course.id); // Assuming each course has an 'id'
+
+            // Send a POST request to the backend to update the cart
+            fetch("http://localhost:5001/api/courses/add-to-cart", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email: email,
+                courses: courseIds,
+              }),
+            })
+              .then((response) => response.json())
+              .then((result) => {
+                if (result.message === "Courses added to cart successfully") {
+                  alert("Courses successfully added to your cart!");
+                  localStorage.removeItem("productList"); // Clear the cart in localStorage
+                  window.location = "checkout.html"; // Redirect to checkout
+                } else {
+                  alert(result.message || "Failed to update cart.");
+                }
+              })
+              .catch((error) => {
+                console.error("Error updating cart:", error);
+                alert("An error occurred while updating your cart.");
+              });
+          } else {
+            alert("Your cart is empty!");
+          }
+        });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Function to retrieve the product list from local storage
+        function getProductListFromLocalStorage() {
+          var productListJSON = localStorage.getItem("productList");
+          return productListJSON ? JSON.parse(productListJSON) : [];
+        }
+
+        // Function to populate the order table with product information
+        function populateOrderTable() {
+          var orderTableBody = $(".site-block-order-table tbody");
+          var productList = getProductListFromLocalStorage();
+
+          // Clear existing rows from the table body
+          orderTableBody.empty();
+
+          // Iterate over each product in the productList array
+          productList.forEach(function (product) {
+            // Construct HTML for the table row representing the product
+            var productHTML =
+              "<tr>" +
+              "<td>" +
+              product.name +
+              "</td>" +
+              "<td>$" +
+              product.price.toFixed(2) +
+              "</td>" +
+              "</tr>";
+
+            // Append the product HTML to the table body
+            orderTableBody.append(productHTML);
+          });
+
+          // Calculate subtotal, tax, and order total
+          var subtotal = productList.reduce(function (acc, product) {
+            return acc + product.price;
+          }, 0);
+          var tax = subtotal * 0.13; // 13% tax
+          var orderTotal = subtotal + tax;
+
+          // Append subtotal, tax, and order total rows to the table body
+          orderTableBody.append(
+            "<tr>" +
+              "<td class='text-black font-weight-bold'><strong>Cart Subtotal</strong></td>" +
+              "<td class='text-black'>$" +
+              subtotal.toFixed(2) +
+              "</td>" +
+              "</tr>"
+          );
+          orderTableBody.append(
+            "<tr>" +
+              "<td class='text-black font-weight-bold'><strong>Tax (13%)</strong></td>" +
+              "<td class='text-black'>$" +
+              tax.toFixed(2) +
+              "</td>" +
+              "</tr>"
+          );
+          orderTableBody.append(
+            "<tr>" +
+              "<td class='text-black font-weight-bold'><strong>Order Total</strong></td>" +
+              "<td class='text-black font-weight-bold'><strong>$" +
+              orderTotal.toFixed(2) +
+              "</strong></td>" +
+              "</tr>"
+          );
+        }
+
+        // Call the function to populate the order table
+        populateOrderTable();
+      });
+
+      $(document).ready(function () {
+        $("#modal_trigger").click(function () {
+          $("#modal").fadeIn(300);
+          $("body").addClass("modal-open");
+        });
+
+        $(".modal_close, .modal_overlay").click(function () {
+          $("#modal").fadeOut(300);
+          $("body").removeClass("modal-open");
+        });
+
+        // Toggle between login and registration forms
+        $("#login_form").click(function () {
+          $(".social_login").hide();
+          $(".user_register").hide();
+          $(".user_login").show();
+          $(".header_title").text("Login");
+          return false;
+        });
+
+        $("#register_form").click(function () {
+          $(".social_login").hide();
+          $(".user_login").hide();
+          $(".user_register").show();
+          $(".header_title").text("Register");
+          return false;
+        });
+
+        $(".back_btn").click(function () {
+          $(".user_login").hide();
+          $(".user_register").hide();
+          $(".social_login").show();
+          $(".header_title").text("Login");
+          return false;
+        });
+
+        if (localStorage.getItem(email) !== null) {
+          alert("Username already exists. Please choose a different username.");
+          return;
+        }
+
+        // Login form validation
+        $("#loginForm").validate({
+          rules: {
+            login_useremail: {
+              required: true,
+              email: true,
+            },
+            login_password: {
+              required: true,
+            },
+          },
+          messages: {
+            login_useremail: {
+              required: "Please enter your email address",
+              email: "Please enter a valid email address",
+            },
+            login_password: {
+              required: "Please enter your password",
+            },
+          },
+          submitHandler: function (form) {
+            var loginUsername =
+              document.getElementById("login_useremail").value;
+            var loginPassword = document.getElementById("login_password").value;
+            //var loginUserDisplayname = document.getElementById("login_useremail").value;
+
+            // Check if username exists in local storage
+            if (localStorage.getItem(loginUsername) !== null) {
+              // Retrieve user details
+              var userDetails = JSON.parse(localStorage.getItem(loginUsername));
+
+              // Check if passwords match
+              if (userDetails.password === loginPassword) {
+                //$("body").removeClass("modal-open");
+                $("#modal").hide();
+                alert("Login successful!");
+                // Redirect or perform further actions for logged in user
+              } else {
+                alert("Incorrect password. Please try again.");
+              }
+            } else {
+              alert("Username not found. Please register first.");
+            }
+            alert("Login form submitted!");
+            debugger;
+            displayWelcomeMessage(userDetails.userName);
+            return false;
+          },
+        });
+
+        function displayWelcomeMessage(user) {
+          // Hide the login form
+          var welcomeMessage = document.getElementById("welcome-message");
+          var userUsername = document.getElementById("user-username");
+          debugger;
+          loginForm.style.display = "none";
+
+          // Display the welcome message
+          welcomeMessage.style.display = "block";
+          userUsername.textContent = user;
+        }
+        // Registration form validation
+        $("#registrationForm").validate({
+          rules: {
+            email: {
+              required: true,
+              email: true,
+            },
+            password: {
+              required: true,
+            },
+            userName: {
+              required: true,
+            },
+          },
+          messages: {
+            email: {
+              required: "Please enter your email address",
+              email: "Please enter a valid email address",
+            },
+            password: {
+              required: "Please enter a password",
+            },
+            userName: {
+              required: "Please enter a UserName",
+            },
+          },
+          submitHandler: function (form) {
+            var email = $("#email").val();
+            var password = $("#password").val();
+            var userName = $("#userName").val();
+
+            // Check if the user already exists
+            if (localStorage.getItem(email) !== null) {
+              alert(
+                "User with this email already exists. Please choose a different email."
+              );
+              return false;
+            }
+
+            // Store registration details in local storage
+            var userDetails = {
+              email: email,
+              password: password,
+              userName: userName,
+            };
+            localStorage.setItem(email, JSON.stringify(userDetails));
+
+            // Handle registration form submission (e.g., redirect)
+            alert("Registration successful!");
+            $("#modal").hide();
+
+            return false; // Prevent form submission
+          },
+        });
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  </body>
+</html>
