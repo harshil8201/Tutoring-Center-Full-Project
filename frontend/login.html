@@ -490,6 +490,7 @@
         .addEventListener("click", function () {
           localStorage.removeItem("userName");
           localStorage.removeItem("userToken");
+          localStorage.removeItem("productList");
           renderLoginForm(); // Re-render login form after logout
         });
     }

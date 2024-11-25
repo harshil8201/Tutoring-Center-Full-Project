@@ -1,5 +1,4 @@
 /* 
-
 to start mongo db server, 
 run this command in mac: 
 
