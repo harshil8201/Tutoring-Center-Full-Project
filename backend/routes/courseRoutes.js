@@ -17,6 +17,7 @@ router.delete("/:id", courseController.deleteCourse);
 // POST to add courses to a user's profile
 router.post("/add-to-cart", courseController.addCoursesToUserProfile);
 
+// GET a course for Logged-in user
 router.get("/get-user-courses", courseController.getUserCourses);
 
 module.exports = router;
