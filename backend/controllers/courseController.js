@@ -58,6 +58,31 @@ exports.deleteCourse = async (req, res) => {
   }
 };
 
+// Update a course by ID
+exports.updateCourse = async (req, res) => {
+  const { id } = req.params;
+  const { name, price, img } = req.body;
+
+  try {
+    const updatedCourse = await Course.findByIdAndUpdate(
+      id,
+      { name, price, img },
+      { new: true } // Return the updated document
+    );
+
+    if (!updatedCourse) {
+      return res.status(404).json({ message: "Course not found" });
+    }
+
+    res.status(200).json({
+      message: "Course updated successfully",
+      course: updatedCourse,
+    });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
 // Add courses to the user's profile (cart)
 exports.addCoursesToUserProfile = async (req, res) => {
   const { email, courses } = req.body; // `email` and `courses` from the request

@@ -14,6 +14,9 @@ router.get("/getCourse", courseController.getCoursesAPI);
 // DELETE a course by ID
 router.delete("/:id", courseController.deleteCourse);
 
+// Update a course by ID
+router.put("/:id", courseController.updateCourse);
+
 // POST to add courses to a user's profile
 router.post("/add-to-cart", courseController.addCoursesToUserProfile);
 
