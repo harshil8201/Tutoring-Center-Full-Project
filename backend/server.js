@@ -4,6 +4,11 @@ run this command in mac:
 
 sudo mongod --dbpath=/Users/harshilpatel/data/db
 
+then run this commands in Backend folder terminal.
+
+npm install
+npm start
+
 */
 
 const express = require("express");
