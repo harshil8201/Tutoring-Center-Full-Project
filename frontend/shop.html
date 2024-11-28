@@ -75,7 +75,6 @@
           </ul>
 
           <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-            
             <li>
               <a class="nav-link" href="cart.html"
                 ><img src="images/cart.svg"
@@ -290,6 +289,8 @@
   </body>
   <script>
     $(document).ready(function () {
+      let products = []; // Declare globally accessible products array
+
       // Function to fetch product data from the API
       async function fetchProducts() {
         try {
@@ -303,7 +304,7 @@
           }
 
           // Parse the response data as JSON
-          const products = await response.json();
+          products = await response.json();
 
           // Call the populateProductList function to populate the product list with fetched products
           populateProductList(products);

@@ -307,7 +307,6 @@
           </ul>
 
           <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-            
             <li>
               <a class="nav-link" href="cart.html"
                 ><img src="images/cart.svg"
@@ -997,16 +996,16 @@
               .then((response) => response.json())
               .then((result) => {
                 if (result.message === "Courses added to cart successfully") {
-                  alert("Courses successfully added to your cart!");
+                  alert("Courses successfully added to your Order history!");
                   localStorage.removeItem("productList"); // Clear the cart in localStorage
                   window.location = "checkout.html"; // Redirect to checkout
                 } else {
-                  alert(result.message || "Failed to update cart.");
+                  alert(result.message || "Failed to update Order history.");
                 }
               })
               .catch((error) => {
                 console.error("Error updating cart:", error);
-                alert("An error occurred while updating your cart.");
+                alert("An error occurred while updating your Order history.");
               });
           } else {
             alert("Your cart is empty!");

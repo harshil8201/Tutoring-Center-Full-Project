@@ -64,7 +64,9 @@ exports.addCoursesToUserProfile = async (req, res) => {
 
   // Validate input
   if (!email || !Array.isArray(courses) || courses.length === 0) {
-    return res.status(400).json({ message: "Invalid request data" });
+    return res
+      .status(400)
+      .json({ message: "Please Login or Register to add course" });
   }
 
   try {
