@@ -2,7 +2,7 @@
 to start mongo db server, 
 run this command in mac: 
 
-sudo mongod --dbpath=/Users/harshilpatel/data/db  
+sudo mongod --dbpath=/Users/harshilpatel/data/db
 
 */
 

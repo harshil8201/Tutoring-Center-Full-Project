@@ -1,13 +1,30 @@
 const Course = require("../models/courseModel");
 const User = require("../models/userModel");
 
-// Fetch all courses in JSON format (API)
+// Fetch all courses in JSON format (API) excluding user's order history
 exports.getCoursesAPI = async (req, res) => {
+  const { email } = req.query; // Get user's email from query parameters
+
   try {
-    const courses = await Course.find().sort({ _id: -1 }); // Sort by _id in descending order
-    res.status(200).json(courses); // Respond with courses in JSON format
+    let excludedCourseIds = [];
+
+    // If email is provided, fetch user's order history to exclude those courses
+    if (email) {
+      const user = await User.findOne({ email });
+      if (user && user.cart.length > 0) {
+        excludedCourseIds = user.cart.map((courseId) => courseId.toString()); // Extract course IDs from user's cart
+      }
+    }
+
+    // Fetch all courses excluding the ones in user's cart
+    const courses = await Course.find({
+      _id: { $nin: excludedCourseIds }, // Exclude courses from user's cart
+    }).sort({ _id: -1 }); // Sort by _id in descending order
+
+    res.status(200).json(courses); // Respond with the filtered courses in JSON format
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    console.error("Error fetching courses:", err);
+    res.status(500).json({ message: "Internal server error" });
   }
 };
 

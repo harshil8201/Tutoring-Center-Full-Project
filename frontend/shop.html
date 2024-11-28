@@ -294,13 +294,24 @@
       // Function to fetch product data from the API
       async function fetchProducts() {
         try {
-          const response = await fetch(
-            "http://localhost:5001/api/courses/getCourse"
-          );
+          // Check if userEmail is stored in local storage
+          const email = localStorage.getItem("userEmail");
 
-          // Check if the response is OK
+          // Construct the URL based on whether the user is logged in
+          const apiUrl = email
+            ? `http://localhost:5001/api/courses/getCourse?email=${encodeURIComponent(
+                email
+              )}`
+            : `http://localhost:5001/api/courses/getCourse`;
+
+          // Fetch products
+          const response = await fetch(apiUrl);
+
+          // Check if the response status is not OK
           if (!response.ok) {
-            throw new Error("Network response was not ok");
+            throw new Error(
+              `Network response was not ok. Status: ${response.status}`
+            );
           }
 
           // Parse the response data as JSON
