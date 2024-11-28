@@ -4,7 +4,7 @@ run this command in mac:
 
 sudo mongod --dbpath=/Users/harshilpatel/data/db
 
-then run this commands in Backend folder terminal.
+then run this commands in Backend folder terminal to downlaod node_modules package.
 
 npm install
 npm start
